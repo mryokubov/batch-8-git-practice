@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    
     private WebDriver driver;
 
     public LoginPage(WebDriver driver){
@@ -17,16 +16,16 @@ public class LoginPage {
     @FindBy(id = "username")
     protected WebElement usernameInput;
 
-
     @FindBy(id = "password")
     protected WebElement passwordInput;
 
     @FindBy(id = "loginbtn")
     protected WebElement loginBtn;
 
-    public void login(){
-        usernameInput.sendKeys("username");
-        passwordInput.sendKeys("password");
+    public void login(String userName, String password) throws InterruptedException {
+        usernameInput.sendKeys(userName);
+        passwordInput.sendKeys(password);
+        Thread.sleep(1000);
         loginBtn.click();
     }
 }
