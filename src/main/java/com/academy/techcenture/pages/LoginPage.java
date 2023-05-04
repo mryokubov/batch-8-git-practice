@@ -22,10 +22,17 @@ public class LoginPage {
     @FindBy(id = "loginbtn")
     protected WebElement loginBtn;
 
+    @FindBy(id = "logoutbtn")
+    protected WebElement logoutBtn;
+
     public void login(String userName, String password) throws InterruptedException {
         usernameInput.sendKeys(userName);
         passwordInput.sendKeys(password);
         Thread.sleep(1000);
         loginBtn.click();
+    }
+
+    public void logout(){
+        logoutBtn.click();
     }
 }
