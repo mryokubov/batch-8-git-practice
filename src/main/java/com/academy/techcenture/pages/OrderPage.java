@@ -21,4 +21,8 @@ public class OrderPage {
   public void placeOrderFromCoolBranch(){
     System.out.println("We can place cool orders because we are on the cool branch!!!!");
   }
+
+  public void anotherCoolFeature(){
+    System.out.println("some stuff here");
+  }
 }
