@@ -17,4 +17,8 @@ public class OrderPage {
   public void placeOrder(){
     System.out.println("I am still working on this. Please give me 3 months");
   }
+
+  public void placeOrderFromCoolBranch(){
+    System.out.println("We can place cool orders because we are on the cool branch!!!!");
+  }
 }
