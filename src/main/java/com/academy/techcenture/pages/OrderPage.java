@@ -25,4 +25,8 @@ public class OrderPage {
   public void anotherCoolFeature(){
     System.out.println("some stuff here");
   }
+
+  public void anotherMethodOnMaster(){
+    System.out.println("fjkalsdfjaslkdjf");
+  }
 }
