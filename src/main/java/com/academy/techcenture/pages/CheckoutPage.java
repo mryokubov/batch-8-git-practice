@@ -11,7 +11,7 @@ public class CheckoutPage {
     }
 
 
-    @FindBy (id = "username")
+    @FindBy (xpath = "//div[@id='username']")
     protected WebElement usernameInput;
 
 
